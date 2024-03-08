@@ -1,0 +1,77 @@
+.plots-container {
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.plots-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plot-card {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.plot-card h3 {
+    font-size: 18px;
+}
+
+.plot-card p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.plot-card img {
+    width: 150px;
+    height: 150px;
+    margin: 0 20px 0 5px;
+    border-radius: 10px;
+}
+
+.plots-header {
+    display: flex;
+}
+
+.plots-header h1 {
+    width: 84vw;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.plots-header button {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 16px;
+    max-width: 90px;
+    display: flex;
+    max-height: 30px;
+    padding: 2px 20px;
+    background-color: gray;
+    border: 1px solid gray;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    color: white;
+}
+
+.plots-header button:hover {
+    background-color: #aaaaaa;
+    border: 1px solid #aaaaaa;
+    transition: 0.3s;
+    color: white;
+}

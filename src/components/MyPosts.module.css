@@ -1,0 +1,73 @@
+.my_posts_header {
+    display: flex;
+}
+
+.my_posts_container {
+  text-align: center;
+  margin: 20px;
+}
+
+.my_posts_header h1 {
+    width: 84vw;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.my_posts_header button {
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 16px;
+    max-width: 90px;
+    display: flex;
+    max-height: 30px;
+    padding: 2px 20px;
+    background-color: gray;
+    border: 1px solid gray;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    color: white;
+}
+
+.my_posts_header button:hover {
+    background-color: #aaaaaa;
+    border: 1px solid #aaaaaa;
+    transition: 0.3s;
+    color: white;
+}
+  
+  .my_posts_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .my_posts_card {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .my_posts_card h3 {
+    font-size: 18px;
+  }
+  
+  .my_posts_card p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .my_posts_card img {
+    width: 150px;
+    height: 150px;
+    margin: 0 20px 0 5px;
+    border-radius: 10px;
+  }
+  

@@ -1,0 +1,13 @@
+.button {
+    padding: 5px 20px;
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    position: absolute;
+    bottom: 5%;
+    left: 65%;
+}

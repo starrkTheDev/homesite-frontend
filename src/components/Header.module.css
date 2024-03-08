@@ -1,0 +1,67 @@
+.header {
+    height: 6vh;
+    min-height: 50px;
+    background-color: gray;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    margin-right: 30px;
+    display: flex;
+    width: 1000px;
+    justify-content: space-around;
+}
+
+.firstLine {
+    display: flex;
+    gap: 20px;
+}
+
+.name {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.languageContainer button {
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+.flagIcon {
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 744px) {
+
+    .header {
+       height: 30vh;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-right: 0;
+    }
+
+    .name {
+        font-size: 24px;
+        padding: 0;
+    }
+}

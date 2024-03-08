@@ -1,0 +1,8 @@
+.input_title {
+    width: 305px;
+    height: 35px;
+    border-radius: 3px;
+    border: 1px solid white;
+    margin-top: 15px;
+    text-align: center;
+}

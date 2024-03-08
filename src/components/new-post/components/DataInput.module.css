@@ -1,0 +1,52 @@
+.input_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.number_inputs {
+    max-width: 145px;
+    border-radius: 3px;
+    border: 1px solid white;
+    padding: 8px 0;
+    text-align: center;
+    margin: 5px;
+}
+
+.date_input {
+    max-width: 145px;
+    border-radius: 3px;
+    border: 1px solid white;
+    padding: 8px 15px;
+    text-align: center;
+    margin: 5px;
+}
+
+.checkbox {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 23px;
+    padding: 10px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.checkbox_2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 23px;
+    padding: 10px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.singleCheckbox {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
