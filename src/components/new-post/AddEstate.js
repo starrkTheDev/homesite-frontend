@@ -174,7 +174,7 @@ const AddEstate = () => {
             setInvalidNumber(false);
         };
 
-        fetch('http://homesite-api.onrender.com/graphql', {
+        fetch('https://homesite-api.onrender.com/graphql', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
