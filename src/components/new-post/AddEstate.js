@@ -67,7 +67,7 @@ const AddEstate = () => {
         const formData = new FormData();
         formData.append('image', file);
 
-        const response = await axios.post('https:/homesite-api.onrender.com/images', formData, {
+        const response = await axios.post('https://homesite-api.onrender.com/images', formData, {
             headers: {
                 'Content-Type': 'multipart/form-data',
             }
