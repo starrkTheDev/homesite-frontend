@@ -10,10 +10,10 @@
 }
 
 .wrapper {
-    margin-right: 30px;
     display: flex;
     width: 1000px;
     justify-content: space-around;
+    margin-right: 100px;
 }
 
 .firstLine {
@@ -44,6 +44,29 @@
     width: 40px;
     height: 30px;
     cursor: pointer;
+}
+
+.modal_container {
+    display: flex;
+    position: absolute;
+}
+
+.background {
+    height: 93.2vh;
+    background-color: gray;
+    opacity: 70%;
+    width: 70vw;
+    z-index: 10;
+}
+
+.modal {
+    height: 93.2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 30vw;
+    z-index: 10;
 }
 
 @media (max-width: 744px) {
