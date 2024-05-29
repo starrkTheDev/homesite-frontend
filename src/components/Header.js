@@ -2,7 +2,7 @@ import classes from './Header.module.css';
 import React from "react";
 import LoginButton from './buttons/LoginButton';
 import AddButton from './buttons/AddButton';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import SearchButton from './buttons/SearchButton';
 import LogoutButton from './buttons/LogoutButton';
 import MyPostsButton from './buttons/MyPostsButton';
@@ -15,6 +15,7 @@ const Header = () => {
     const [isAddForm, setIsAddForm] = useState(false);
     const { switchLanguage, language } = useLanguage();
     const [modal, setModal] = useState(false);
+    const [username, setUsername] = useState('');
 
     const handleLanguageSwitch = (newLanguage) => {
         switchLanguage(newLanguage);
@@ -43,6 +44,44 @@ const Header = () => {
 
 
     const token = localStorage.getItem('token');
+
+    const getUserName = async(userId) => {
+        const graphqlQuery = {
+            query: `
+                query GetUserName($userId: ID!) {
+                    getUserName(userId: $userId) 
+                }
+            `,
+            variables: {
+                userId,
+            },
+        };
+
+        try {
+            const response = await fetch('http://localhost:8080/graphql', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${localStorage.getItem('token') || ''}`
+              },
+              body: JSON.stringify(graphqlQuery),
+            });
+        
+            const responseData = await response.json();
+            const fetchedUserName = responseData.data?.getUserName || [];
+            setUsername(fetchedUserName);
+          } catch (error) {
+            console.error('Error:', error);
+          }
+    };
+
+    useEffect(() => {
+        const userId = localStorage.getItem('userId');
+        getUserName(userId);
+        console.log(userId);
+
+    }, []);
+    
 
     return (
         <div>
@@ -90,6 +129,7 @@ const Header = () => {
             <div className={classes.modal_container}>
                 <div onClick={modalDisabler} className={classes.background}></div>
                 <div className={classes.modal}>
+                    <p className={classes.username}>Hi {username}!</p>
                     <MyPostsButton/>
                     <LogoutButton/>
                 </div>
