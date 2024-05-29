@@ -69,6 +69,11 @@
     z-index: 10;
 }
 
+.username {
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 @media (max-width: 744px) {
 
     .header {
