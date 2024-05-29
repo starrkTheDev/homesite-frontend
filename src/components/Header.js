@@ -58,7 +58,7 @@ const Header = () => {
         };
 
         try {
-            const response = await fetch('http://localhost:8080/graphql', {
+            const response = await fetch('https://homesite-api.onrender.com/graphql', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
