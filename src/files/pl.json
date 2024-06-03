@@ -75,5 +75,6 @@
     "descriptionError": "Proszę opisać ogłoszenie",
     "placeError": "Proszę wybrać miejsce",
     "selectError": "Proszę wybrać wszystkie z 4 opcji wyżej",
-    "loadFile": "Wybierz zdjęcie aby dodać ogłoszenie"
+    "loadFile": "Wybierz zdjęcie aby dodać ogłoszenie",
+    "hi": "Witaj"
 }
