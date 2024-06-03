@@ -75,5 +75,6 @@
     "descriptionError": "Please enter the description",
     "placeError": "Please enter the place",
     "selectError": "Please select all of the 4 options above",
-    "loadFile": "Load the picture before adding the post"
+    "loadFile": "Load the picture before adding the post",
+    "hi": "Hi"
   }
