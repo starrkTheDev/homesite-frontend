@@ -71,7 +71,7 @@
 
 .username {
     font-size: 16px;
-    margin-top: 10px;
+    margin: 10px 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 @media (max-width: 744px) {
