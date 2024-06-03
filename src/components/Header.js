@@ -16,6 +16,7 @@ const Header = () => {
     const { switchLanguage, language } = useLanguage();
     const [modal, setModal] = useState(false);
     const [username, setUsername] = useState('');
+    const translations = require(`../files/${language}.json`);
 
     const handleLanguageSwitch = (newLanguage) => {
         switchLanguage(newLanguage);
@@ -129,7 +130,7 @@ const Header = () => {
             <div className={classes.modal_container}>
                 <div onClick={modalDisabler} className={classes.background}></div>
                 <div className={classes.modal}>
-                    <p className={classes.username}>Hi {username}!</p>
+                    <p className={classes.username}>{translations.hi}, {username}!</p>
                     <MyPostsButton/>
                     <LogoutButton/>
                 </div>
