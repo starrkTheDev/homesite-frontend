@@ -74,6 +74,12 @@
     margin: 10px 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.profile {
+    width: 180px;
+    height: 180px;
+    border-radius: 15px;
+}
 @media (max-width: 744px) {
 
     .header {
